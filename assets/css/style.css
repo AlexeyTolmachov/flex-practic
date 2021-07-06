@@ -1,0 +1,208 @@
+@import "./reset.css";
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 450px;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.header::before {
+  content: "";
+  background-image: url("./../img/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* inset: 0;   */
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  /* padding: 10px; */
+}
+
+.header-text {
+  font-size: 1.1rem;
+}
+
+.title,
+.header-text,
+.section-title,
+.card-title {
+  margin-bottom: 10px;
+}
+
+.title,
+.section-title,
+.card-title {
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block;
+  padding: 15px 20px;
+  background: yellowgreen;
+  border-radius: 10px;
+  text-transform: capitalize;
+  max-width: 150px;
+}
+
+.overflow-protection {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.link:hover {
+  background-color: green;
+}
+
+.section {
+  padding: 20px;
+  background-color: #bbb;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.6rem;
+}
+
+.text-columns {
+  columns: 2 7rem;
+  column-gap: 1.5rem;
+}
+
+.work-section {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden-title {
+  position: absolute;
+  left: -5000%;
+  opacity: 0;
+}
+
+.card {
+  max-width: 300px;
+  background-color: white;
+  margin: 20px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-about-us {
+  display: flex;
+}
+
+.our-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  flex-wrap: wrap;
+  min-height: 250px;
+  padding: 30px;
+  color: white;
+  background-color: rgba(5, 124, 179, 0.972);
+}
+
+.dark-style {
+  background-color: #333;
+}
+
+.bottom-text {
+  padding: 20px 0;
+  font-size: 1.1rem;
+}
+
+.bottom-title {
+  margin: 30px auto;
+  font-size: 1.6rem;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  min-height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.footer-link {
+  color: blue;
+  margin-left: 10px;
+}
+
+.project-by {
+  display: flex;
+}
+
+.footer-text{
+  font-size: 1rem;
+}
